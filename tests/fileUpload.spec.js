@@ -5,7 +5,7 @@ test ("Verify file Upload", async ({page})=>{
     //1. GO to page/site
     await page.goto("https://the-internet.herokuapp.com/upload")
     //2. Upload File
-    await page.locator("#file-upload").setInputFiles("./photos/Screenshot (1).png")
+    await page.locator("#file-upload").setInputFiles("./photos/img1.png")
 
     //3.Click on Submit Btn
     await page.locator("#file-submit").click()
